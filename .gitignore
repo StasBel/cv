@@ -1,0 +1,7 @@
+# Emacs backup
+*~
+
+# Latex output
+*.aux
+*.log
+*.out

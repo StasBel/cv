@@ -1,0 +1,6 @@
+# cv
+
+## Requirements
+
+* `make`
+* `pdflatex`
