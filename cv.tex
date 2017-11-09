@@ -3,7 +3,11 @@
 %----------------------------------------------------------------------------------------
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\SKIP}{\vspace{-1.5\baselineskip}}
+\newcommand{\SKIPSM}{\vspace{-0.7\baselineskip}}
+\newcommand{\SKIPITEM}{\item[]\SKIP}
+
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Belyaev Stasnislav Valeryevich}
@@ -39,23 +43,30 @@ Taking courses on Machine Learning and Data Analysis
 \url{http://deepbayes.ru/} 
 
 \end{rSection}
+\SKIPSM
 %------------------------------------------------------------------------
 %	SKILLS
 %------------------------------------------------------------------------
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-PL & Python, C++, Java, Scala, Kotlin, Ocaml, Haskell, R, Matlab \\ 
+PL & Python, R, Java, Kotlin, C++, Scala, Ocaml, Haskell, Matlab \\ 
 Technologies & git, bash, sql, gdb, docker, vagrant, jupyter, tensorflow, keras \\
 Interests & Reinforcement Learning, Deep Learning, Neural Networks, Data Science \\  
 Languages & Russian (Native), English (Advanced) \\
 \end{tabular}
 
 \end{rSection}
+\SKIPSM
 %------------------------------------------------------------------------- 
 %	EXPERIENCE
 %-------------------------------------------------------------------------
 \begin{rSection}{Experience}
+
+\begin{rSubsection}{\href{http://stepik.org/}{Devexperts}}{November 2017 - Until now}
+{Data Analyst (Stock Market Indices)}{} 
+\item[] Chief: Antonov A.
+\end{rSubsection}
 
 \begin{rSubsection}{\href{http://stepik.org/}{Stepik (JetBrains Internship)}}{June 2017 - September 2017}
 {\href{https://jetbrains.ru/students/internship/themes/again/}{Developing system for code submission clustering and finding similarities, smart tips for learning}}{} 
@@ -63,24 +74,26 @@ Languages & Russian (Native), English (Advanced) \\
 \end{rSubsection}
 
 \end{rSection} 
+\SKIPSM
 %-------------------------------------------------------------------------
 %	SELECTED PROJECTS
 %-------------------------------------------------------------------------
 \begin{rSection}{Selected projects}
 
-\begin{rSubsection}{Bayesian models for recommendation system}{September 2017 - Until now}{Bachelor thesis}{}
-\item[] JetBrains Research, Kuralenok I.
+\begin{rSubsection}{Bayesian models for recommendation system}{September 2017 - Until now}{Bachelor Thesis}{}
+\item[] JetBrains Research, Supervisor: Kuralenok I.
 \end{rSubsection}
 
-\begin{rSubsection}{Prophet}{September 2016 - December 2016}{\href{https://drive.google.com/file/d/0B6udzTbX1EFPTFZMSS1RVUVvXzg/view?usp=sharing}{Automatic patch generation using Machine Learning}}{}
-\item[] JetBrains Research, Shpilman A. | \url{https://github.com/StasBel/prophet-test}
+\begin{rSubsection}{Searching with prior information}{September 2017 - Until now}{IR Project}{}
+\item[] \url{github.com/stasbel/articlix}
 \end{rSubsection}
 
-\begin{rSubsection}{Program Synthesis}{January 2017 - May 2017}{\href{https://docs.google.com/presentation/d/113EFcW8L7p8ickhfMoht8ivOomq2fRPizLtWSH9cSX4/pub?start=false&loop=false&delayms=3000}{Encoder-Decoder model for patch generation}}{}
-\item[] JetBrains Research, Shpilman A. | \url{https://github.com/StasBel/program-synthesis}
+\begin{rSubsection}{Program Synthesis}{September 2016 - May 2017}{\href{https://docs.google.com/presentation/d/113EFcW8L7p8ickhfMoht8ivOomq2fRPizLtWSH9cSX4/pub?start=false&loop=false&delayms=3000}{Automatic patch generation using ML (Encoder-Decoder model)}}{}
+\item[] JetBrains Research, Supervisor: Shpilman A. | \url{https://github.com/StasBel/program-synthesis}
 \end{rSubsection}
 
 \end{rSection}
+\SKIPSM
 %-------------------------------------------------------------------------
 %	ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ
 %-------------------------------------------------------------------------
@@ -91,6 +104,7 @@ Languages & Russian (Native), English (Advanced) \\
 {\href{https://docs.google.com/presentation/d/e/2PACX-1vSooVyWYFG1swzqGyjLB7dYQ9sLMzzg_s-GqHXBTOw21FyBzhWBtI73wAZlr5lATY5iqEstFBe--Opc/pub?start=false&loop=false&delayms=3000}{Stepik Result}} \hfill September 2017 \\
 
 \end{rSection} 
+\SKIP
 %-------------------------------------------------------------------------
 %	ОНЛАЙН КУРСЫ
 %-------------------------------------------------------------------------
