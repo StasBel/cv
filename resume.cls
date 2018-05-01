@@ -32,6 +32,7 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 
 \usepackage{hyperref}
+\usepackage{multicol}
 
 \pagestyle{empty} % Suppress page numbers
 
