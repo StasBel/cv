@@ -1,5 +1,6 @@
 # Emacs backup
 *~
+.DS_Store
 
 # Latex output
 *.aux
